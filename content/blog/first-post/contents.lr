@@ -1,0 +1,25 @@
+title: Documentation&Documentation&Documentation.
+---
+pub_date: 2017-02-06
+---
+author: Scott Doucet
+---
+body:
+
+Some people go with an introductory post about their cats or why double-double is better than triple-triple, but I'm gonna jump right in with a full-on walkthrough/tutorial/shitshow about -you guessed it- bacon! 
+
+Erm, I mean documentation.
+
+Pytron has documentation. It was the first project I ever made with the intention of other people using it and I spent as much time documenting as I did writing code. And all was good. But after that something definitely happened, and for some reason, any other project I started had little to no public documentation to go with it. Most had only a README file with some basic usage examples. 
+
+It's not that I wasn't still writing docstrings with my code, I was. It was Sphinx.
+
+Sphinx is the de-facto package documentation generator for Python projects, it scans your package files for docstrings, does some magic and presto-chango, your docs are ready to go! Yeah, right. Sphinx is hard. I remember actually going through the rendered html files and making manual changes to certain parts that I wasn't happy with and re-upping them to PyPi.. It was rough, but I made it work.
+
+Now, the problem wasn't entirely with Sphinx, per-se.. Everybody who has tried it knows there's a learning curve involved, and it's not like there isn't any documentation available (that would be too ironic). The problem was the way I worked *combined* with the complexity of Sphinx. I wasn't ready to put in the work to learn, I just wanted my package out. 
+
+I haven't used it since.
+
+But I intend to change that today, I mention on my home page
+---
+_hidden: yes

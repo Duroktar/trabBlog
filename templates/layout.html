@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<title>{% block title %}Home{% endblock %} | A blog for the kid in the corner with sweatpants</title>
+</head>
+<body>
+<div class=container>
+  <div class=header>
+      <div class=navigation>
+        <ul>
+          <li><a href="/">home</a>
+          <li><a href="/blog/">blog</a>
+          <li><a href="/projects/">projects</a>
+          <li><a href="/about/">about</a>
+          <!--<li><a href="/archive/">archive</a>-->
+          <!--<li><a href="/tags/">tags</a>-->
+        </ul>
+      </div>
+
+  <div class="page">
+    {% block body %}{% endblock %}
+  </div>
+  <div class=footer>
+    <p>&copy; Copyright 2017 by Scott Doucet.
+    <p>
+      Content licensed under the Creative Commons
+      attribution-noncommercial-sharealike License.
+    <p>
+      Contact me via <a href="mailto:Duroktar@gmail.com">mail</a>, on
+      <a href="http://github.com/Duroktar">github</a> or
+      <a href="http://bitbucket.org/traBpUkciP">bitbucket</a>.
+      <!--Tip me via <a href="https://www.gittip.com/Duroktar/">gittip</a>.-->
+    <p>
+  </div>
+</div>
+</div>
+</body>
+</html>

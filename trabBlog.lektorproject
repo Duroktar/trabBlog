@@ -1,0 +1,7 @@
+[project]
+name = trabBlog
+url = https://Duroktar.github.io/
+
+[servers.ghpages]
+name = GitPage
+target = ghpages+https://Duroktar/Duroktar.github.io
