@@ -1,5 +1,5 @@
-Duroktar.github.io
-==================
+trabBlog
+========
 
 A blog for the kid in the corner with sweatpants.
 
