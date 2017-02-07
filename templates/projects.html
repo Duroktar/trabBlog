@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <h2>{{ this.title }}</h2>
+  {{ this.body }}
+  {% for repo in get_top_github_repos(type="owner", sort="updated", count=20) %}
+    {% if repo.name not in ["links_app_dev","Duroktar.github.io", "notify-feed", "C-Sharp", "fbchat", "sampleproject", "G.A.I.L-"] %}
+      <li>
+        [{{ repo.stargazers_count }} stars]
+        <strong>{{ repo.name }}</strong>
+        {{ repo.description }}
+      </li>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

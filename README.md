@@ -7,7 +7,7 @@ A blog for the kid in the corner with sweatpants.
 Usage
 -----
 
-Install [**Lektor**](https://www.getlektor.com/) -
+**Install** [**Lektor**](https://www.getlektor.com/) -
 
 - **Python 2.7** (***not*** *Python 3.x*, also `python-dev`, `libssl-dev` and
 `libffi-dev` is required on Ubuntu)
@@ -44,9 +44,14 @@ navigate to directory and from the `terminal` type:
 
 Page can now be accessed in the browser at
 [http://localhost:5000/](http://localhost:5000/)
+where you can preview, edit and push your site to GitHub using the
+provided admin-panel. [More info here](https://www.getlektor.com/docs/guides/)
 
 About
 -----
 
 This is the main repository for my blog. Powered by Lektor.
+The style sheet was taken from [Armin Ronachers](http://lucumr.pocoo.org/)
+blog because I really love it and because it was available under the
+creative commons license, which trabBlog inherits. So, thanks Armin!
 

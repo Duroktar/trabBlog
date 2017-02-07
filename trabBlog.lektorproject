@@ -2,6 +2,9 @@
 name = trabBlog
 url = https://Duroktar.github.io/
 
+[packages]
+lektor-github-repos = 0.1.1
+
 [servers.ghpages]
 name = GitPage
 target = ghpages+https://Duroktar/Duroktar.github.io
