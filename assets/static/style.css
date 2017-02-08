@@ -54,9 +54,9 @@ blockquote                      { font-style: italic; }
 /* code formatting.  no monospace because of webkit (bug?) */
 pre, code, tt   { font-family: 'Ubuntu Mono', 'Consolas', 'Deja Vu Sans Mono',
                   'Bitstream Vera Sans Mono', 'Monaco', 'Courier New';
-                  font-size: 0.9em; }
+                  font-size: 1.01em; }
 pre             { line-height: 1.45; background: none; padding: 0; }
-code, tt        { background: #58310b; }
+code, tt        { color: #8c3d0e; }
 
 /* tables */
 table           { border: 1px solid #ddd; border-collapse: collapse;

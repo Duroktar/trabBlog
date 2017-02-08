@@ -12,9 +12,9 @@ Last week I was building yet another project out to [PyPi](https://pypi.python.o
 - update the setup file with the new version number
 - build distributions
 - run twine to upload to PyPi
-- I also wanted to be able to provide an *optional* `trabbuild.yml` config file which, if found in the package directory, would override the default build commands (ie: `python setup.py sdist`, `python setup.py bdist_wheel --universal` ,etc..)
+- I also wanted to be able to provide an *optional* `trabbuild.yml` config file which, if found in the package directory, would override the default build commands (ie: `python setup.py sdist`, `python setup.py bdist_wheel --universal`, etc..)
 
-So I threw something together that did just what I wanted and no more (Minimum Viable Product right?) and used it to upload [`trabConfig`](https://pypi.python.org/pypi/trabConfig). It worked really good! But the code was a mess, so I took the time to clean it up a bit and make it into a package with a script entry point that, after a quick `pip install -e . --user` I could use with all my projects!
+So I threw something together that did just what I wanted and no more (Minimum Viable Product right?) and used it to upload [trabConfig](https://pypi.python.org/pypi/trabConfig). It worked really good! But the code was a mess, so I took the time to clean it up a bit and make it into a package with a script entry point that, after a quick `pip install -e . --user` I could use with all my projects!
 
 Then, like I always do, I thought I'd check what else was out there, 'cause you know, no better way to reward your hard work than finding out Python already did it! (I swear, Python libraries are like Simpsons episodes. If you can think of it, Python probably did it) Anyways, I came across a post on reddit linking to [this blog](http://renesd.blogspot.ca/2017/02/gradual-packaging-python-part-two.html) and this [repo](https://github.com/illume/pyrelease). It was cool because it was very similar in approach to what I was doing, but had a lot of the features I would have eventually wanted to add already somewhat implemented, and lacked a few features that mine already had. 
 
