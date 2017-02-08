@@ -1,0 +1,30 @@
+title: trabBuild - Simple package deployment
+---
+_hidden: no
+---
+author: Scott Doucet
+---
+body:
+
+Last week I was building yet another project out to [PyPi](https://pypi.python.org/pypi), and thought it would be nice if I could automate some of the process. Basically I needed something that I could run from within a project folder that would 
+- look for a `setup.py` file and scrape the version and package name *-I generally keep the version of my package on one line in my `setup.py` file like this `__version__ == "x.x.x"` - so that's what it looks for-*
+- prompt for a new version number ( or allow it to remain the same)
+- update the setup file with the new version number
+- build distributions
+- run twine to upload to PyPi
+- I also wanted to be able to provide an *optional* `trabbuild.yml` config file which, if found in the package directory, would override the default build commands (ie: `python setup.py sdist`, `python setup.py bdist_wheel --universal` ,etc..)
+
+So I threw something together that did just what I wanted and no more (Minimum Viable Product right?) and used it to upload [`trabConfig`](https://pypi.python.org/pypi/trabConfig). It worked really good! But the code was a mess, so I took the time to clean it up a bit and make it into a package with a script entry point that, after a quick `pip install -e . --user` I could use with all my projects!
+
+Then, like I always do, I thought I'd check what else was out there, 'cause you know, no better way to reward your hard work than finding out Python already did it! (I swear, Python libraries are like Simpsons episodes. If you can think of it, Python probably did it) Anyways, I came across a post on reddit linking to [this blog](http://renesd.blogspot.ca/2017/02/gradual-packaging-python-part-two.html) and this [repo](https://github.com/illume/pyrelease). It was cool because it was very similar in approach to what I was doing, but had a lot of the features I would have eventually wanted to add already somewhat implemented, and lacked a few features that mine already had. 
+
+So I fired up `trabBuild` and unleashed it upon itself. Just like `trabConfig` before it, in a few minutes I had it up and running on PyPi, then I did sometghing I never do and left a message at the bottom of the page, to no doubt be found and rejected by the almighty, omnipotent, Captcha Gods... 
+
+Anyways, the tl;dr is, he got back and wasn't opposed to the idea, so I went ahead and forked the repo. There's definitely other tools out there that do a similar job which I haven't mentioned here, and no disrespect intended, I just happened to really like the simplistic approach the author laid out in his blog, and like I said earlier, I don't care if Python already did it.
+
+
+---
+pub_date: 2017-02-08
+
+---
+summary: A script for painlessly updating and building python distributions to PyPi

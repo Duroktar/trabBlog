@@ -3,27 +3,29 @@
 <head>
 <meta charset="utf-8">
 {% block htmlhead %}
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
 <title>{% block title %}Home{% endblock %} | A blog for the kid in the corner with sweatpants</title>
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
 {% endblock %}
 </head>
 <body>
 <div class=container>
+      <a href="/about/">Duroktar</a>'s Rants and ravings
   <div class=header>
-      <div class=navigation>
-        <ul>
-          <li><a href="/">home</a>
-          <li><a href="/blog/">blog</a>
-          <li><a href="/projects/">projects</a>
-          <li><a href="/about/">about</a>
-          <!--<li><a href="/archive/">archive</a>-->
-          <!--<li><a href="/tags/">tags</a>-->
-        </ul>
-      </div>
-      <div class="page">
+  </div>
+    <div class=navigation>
+    <ul>
+      <li><a href="/">home</a>
+      <li><a href="/blog/">blog</a>
+      <li><a href="/projects/">projects</a>
+      <li><a href="/about/">about</a>
+        <br>
+    </ul>
+    </div>
+    <br>
+    <div class="page">
         {% block body %}{% endblock %}
-      </div>
-  <div class=footer>
+    </div>
+    <div class=footer>
     <p>&copy; Copyright 2017 by Scott Doucet.
     <p>
       Content licensed under the Creative Commons
@@ -35,7 +37,6 @@
       <!--Tip me via <a href="https://www.gittip.com/Duroktar/">gittip</a>.-->
     <p>
   </div>
-</div>
 </div>
 </body>
 </html>

@@ -5,6 +5,8 @@
   {% else %}
     <h2>{{ post.title }}</h2>
   {% endif %}
+  {{ post.body }}
+  </div>
   <p class="meta">
     written by
     {% if post.twitter_handle %}
@@ -13,8 +15,6 @@
     {% else %}
       {{ post.author }}
     {% endif %}
-    on {{ post.pub_date }}
+    - {{ post.pub_date }}
   </p>
-  {{ post.body }}
-  </div>
 {% endmacro %}
