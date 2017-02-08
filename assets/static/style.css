@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* fonts */
-@import url(Merriweather:400,700,400italic,700italic,300,300italic|Crimson+Text:400,400italic,600italic,600&subset=latin,latin-ext);
-
 /* general style */
 body    { font: 17px/25px 'Merriweather', serif;
           margin: 0; padding: 0; font-weight: 400; color: black; }
